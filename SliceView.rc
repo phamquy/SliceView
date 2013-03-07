@@ -1,0 +1,825 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SliceView.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SliceView.ico"
+IDR_SliceViewTYPE       ICON                    "res\\SliceViewDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\MainFrame.bmp"
+IDR_CHILDFRAME          BITMAP                  "res\\ChildFrame.bmp"
+IDB_BRIGHT              BITMAP                  "res\\bitmap1.bmp"
+IDB_CONTRAST            BITMAP                  "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_CHILDFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_PLACEHOLDER0
+    BUTTON      ID_PLACEHOLDER1
+    BUTTON      ID_PLACEHOLDER2
+    BUTTON      ID_PLACEHOLDER3
+    BUTTON      ID_PLACEHOLDER4
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Import files..",             ID_FILE_IMPORTFILES
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SliceView...",         ID_APP_ABOUT
+    END
+    POPUP "Collaboration"
+    BEGIN
+        MENUITEM "Collaboration Dialog",        ID_COLLABORATION_COLLABORATIONDIALOG
+    END
+END
+
+IDR_SliceViewTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Import files..",             ID_FILE_IMPORTFILES
+        MENUITEM "Export files..",              ID_FILE_EXPORTFILES
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "SliceBar",                    ID_VIEW_SLICEBAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "Collaboration"
+    BEGIN
+        MENUITEM "Collaboration Dialog",        ID_COLLABORATION_COLLABORATIONDIALOG
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "&Segment Tools"
+        BEGIN
+            MENUITEM "&Cutout",                     ID_SEGMENTTOOLS_CUTOUT
+            MENUITEM "2D &Region Growing",          ID_SEGMENTTOOLS_REGIONGROWING
+            MENUITEM "3D Resgion Growing",          ID_SEGMENTTOOLS_3DRESGIONGROWING
+            MENUITEM "&Auto Detection",             ID_SEGMENTTOOLS_AUTODETECTION
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SliceView...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SliceView"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "SliceView, Version 2.4",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,114,42,50,14,WS_GROUP
+END
+
+IDD_DIALOGBAR DIALOGEX 0, 0, 414, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 400, 0, 0x81
+BEGIN
+    CONTROL         "Layout:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,4,4,28,8
+    COMBOBOX        IDC_CMB_LAYOUT,30,2,57,63,CBS_DROPDOWNLIST | CBS_SORT | WS_TABSTOP
+    CONTROL         "Lines",IDC_CHK_LINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,152,2,26,10
+    CONTROL         "Info",IDC_CHK_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,181,2,24,10
+    CONTROL         "",IDC_SLD_BRIGHT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,241,0,69,14
+    CONTROL         "",IDC_SLD_CONTRAST,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,340,0,69,14
+    LTEXT           "Brightness",IDC_ST_CONTRAST,209,3,35,8
+    LTEXT           "Contrast",IDC_STATIC,313,3,27,8
+    CONTROL         "Auto",IDC_RA_AUTO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,93,2,25,10
+    CONTROL         "Equal",IDC_RA_EQUAL,"Button",BS_AUTORADIOBUTTON,121,2,28,10
+END
+
+IDD_DLG_VOLSIZE DIALOGEX 0, 0, 70, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VolSize"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "O",IDOK,21,53,20,14
+    PUSHBUTTON      "X",IDCANCEL,43,53,20,14
+    EDITTEXT        IDC_CX,23,7,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CY,23,22,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CZ,23,37,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "CX",IDC_STATIC,11,8,10,8
+    LTEXT           "CY",IDC_STATIC,11,24,10,8
+    LTEXT           "CZ",IDC_STATIC,11,39,10,8
+END
+
+IDD_DLG_BROWSE DIALOGEX 0, 0, 292, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,235,142,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,235,159,50,14
+    EDITTEXT        IDC_FOLDERPATH,7,7,216,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_CMD_BROWSE,235,7,50,14
+    LISTBOX         IDC_FILE_LIST,7,23,216,150,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Select All",IDC_CMD_SELECTALL,235,26,50,14
+    PUSHBUTTON      "Deselect All",IDC_CMD_DESELECTALL,235,43,50,14
+END
+
+IDD_DLG_EXP_OPT DIALOGEX 0, 0, 135, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,32,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,72,32,50,14
+    CONTROL         "TIFF format",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,74,14,54,10
+    CONTROL         "Rawformat",IDC_RD_EXOP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,19,14,51,10
+END
+
+IDD_COLLABORATION DIALOGEX 0, 0, 501, 307
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE
+CAPTION "Collaboration Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Server IP",IDC_STATIC,7,36,76,12
+    LTEXT           "User ID",IDC_STATIC,7,57,76,12
+    EDITTEXT        IDC_EDIT_IPADDRESS,110,34,155,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Connect",IDC_BUTTON_CONNECT,277,41,65,22
+    PUSHBUTTON      "Start",IDC_BUTTON_START,429,106,65,22
+    PUSHBUTTON      "Get",IDC_BUTTON_CONTROL,429,222,65,22
+    CONTROL         "",IDC_LIST_CANDIDATE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,108,355,79
+    CONTROL         "",IDC_LIST_COLLABORATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,221,355,79
+    GROUPBOX        "Candidate of Collaboration",IDC_STATIC,7,95,487,102
+    GROUPBOX        "Candidate of Collaboration",IDC_STATIC,7,198,487,102
+    EDITTEXT        IDC_EDIT_USERID,111,55,155,14,ES_AUTOHSCROLL
+    CONTROL         "Attend the Collaboration",IDC_RADIO_ATTEND1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,375,250,119,15
+    CONTROL         "Leave the Collaboration",IDC_RADIO_LEAVE,"Button",BS_AUTORADIOBUTTON,375,269,119,15
+END
+
+IDD_SEG_DLG DIALOGEX 0, 0, 459, 247
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Segmentation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,364,226,88,14
+    CONTROL         "",IDC_SEG_SLICEPOS,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,25,14,119
+    CONTROL         "",IDC_SEG_CONSTRAST,"msctls_trackbar32",WS_TABSTOP,11,223,81,12
+    CONTROL         "",IDC_SEG_BIRGHT,"msctls_trackbar32",WS_TABSTOP,11,199,81,12
+    LTEXT           "Brightness",IDC_STATIC,16,189,71,8
+    LTEXT           "Contrast",IDC_STATIC,16,213,73,8
+    LTEXT           "Original  Image",IDC_STATIC,23,14,63,8
+    LTEXT           "Result Image",IDC_STATIC,170,14,63,8
+    CONTROL         "",IDC_SEG_THRESHOLD,"msctls_trackbar32",WS_TABSTOP,106,199,79,12
+    LTEXT           "Threshold",IDC_STATIC,110,188,63,8
+    PUSHBUTTON      "Save Single Slice",IDC_CMD_SAVESLICE,364,164,88,14,BS_FLAT
+    PUSHBUTTON      "Save Volume",IDC_CMD_SAVEVOL,364,199,88,14,BS_FLAT
+    CONTROL         "Enable",IDC_SEG_PREPROC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,176,37,10
+    GROUPBOX        "Preprocessing",IDC_STATIC,7,161,92,79
+    GROUPBOX        "Binarization Parameters",IDC_STATIC,102,161,92,79
+    CONTROL         "Default Value",IDC_SEG_BINDEFAULT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,175,59,10
+    PUSHBUTTON      "Save All Slices",IDC_CMD_SAVEALLSLICES,364,182,88,14
+    PUSHBUTTON      "RG3D",IDC_CMD_RG3D,55,73,47,15
+END
+
+IDD_DLD_SEGEX DIALOGEX 0, 0, 232, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Multi Slices"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,52,57,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,52,50,14
+    EDITTEXT        IDC_SEGEX_PATH,7,7,155,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser",IDC_SEGEX_BROW,166,6,59,16
+    COMBOBOX        IDC_SEGEX_FILETYPE,7,25,156,35,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_REGIONGROW DIALOGEX 0, 0, 602, 432
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Region Growing Segmentation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Gray Preprocessing",IDC_RG_GRAYGRP,8,311,124,115
+    CONTROL         "",IDC_RG_SLD_BRIGHT,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,18,358,102,15
+    CONTROL         "",IDC_RG_SLD_CONTRAST,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,18,396,102,15
+    LTEXT           "Brightness",IDC_LBL_BRIGHT,18,346,57,11
+    LTEXT           "Contrast",IDC_LBL_CONTRAST,18,385,52,11
+    GROUPBOX        "Region Growing Settings",IDC_RG_SETTINGGRP,140,310,107,115
+    CONTROL         "",IDC_RG_SLD_THRES,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,150,360,90,15
+    LTEXT           "Region Threshold",IDC_LBL_THRES,149,346,72,11
+    PUSHBUTTON      "Close",IDCANCEL,495,411,100,14
+    PUSHBUTTON      "Save Single Slice",IDC_RG_CMD_SAVESINGLE,495,330,100,16
+    PUSHBUTTON      "Save All Slice",IDC_RG_CMD_SAVEALL,495,348,100,16
+    PUSHBUTTON      "Save Volume",IDC_RG_CMD_SAVEVOL,495,366,100,16
+    CONTROL         "",IDC_RG_SLD_SLICE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,258,588,18,WS_EX_STATICEDGE
+    CONTROL         "Enable Preprocessing",IDC_RG_CHK_PREPROC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,328,90,13
+    CONTROL         "Use default value",IDC_RG_CHK_DEF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,152,328,74,13
+    CONTROL         "",IDC_AU_ORGFRAME,"Static",SS_BLACKFRAME,7,7,291,247,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_AU_RESFRAME,"Static",SS_BLACKFRAME,304,7,291,247,WS_EX_CLIENTEDGE
+    LTEXT           "-1",IDC_BR_100,22,373,14,8
+    LTEXT           "-1",IDC_CS_100,22,410,14,11
+    LTEXT           "1",IDC_CS_M100,109,409,8,12
+    LTEXT           "1",IDC_BR_M100,110,372,12,12
+    LTEXT           "0",IDC_TH_MIN,153,375,8,8,0,WS_EX_RIGHT
+    LTEXT           "255",IDC_TH_MAX,227,375,12,8
+    LTEXT           "Static",IDC_TH_CUR,169,374,19,8
+    GROUPBOX        "Operation modes",IDC_RG_OPPGRP,258,311,120,114
+    COMBOBOX        IDC_RG_CB_CUTMODE,270,369,96,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Cutting methods",IDC_RG_LBL_CUTMED,270,358,54,8
+    CONTROL         "Segmentation mode",IDC_RAD_SEG,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,270,327,79,10
+    CONTROL         "Cutting mode",IDC_RAD_CUT,"Button",BS_AUTORADIOBUTTON,270,342,59,10
+END
+
+IDD_DLG_AUTOSEGMENT DIALOGEX 0, 0, 616, 426
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Auto segmentation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Gray Preprocessing",IDC_AU_GRAYGRP,10,305,124,115
+    CONTROL         "",IDC_AU_SLD_BRIGHT,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,19,352,102,15
+    CONTROL         "",IDC_AU_SLD_CONTRAST,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,20,391,102,15
+    LTEXT           "Brightness",IDC_AU_LBL_BRIGHT,20,340,57,11
+    LTEXT           "Contrast",IDC_AU_LBL_CONTRAST,20,379,52,11
+    GROUPBOX        "Binary threshold level",IDC_AU_SETTINGGRP,142,304,107,115
+    CONTROL         "",IDC_AU_SLD_THRES,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,152,354,90,15
+    LTEXT           "Threshold value",IDC_AU_LBL_THRES,151,340,72,11
+    PUSHBUTTON      "Save Single Slice",IDC_AU_CMD_SAVESINGLE,508,322,100,16
+    PUSHBUTTON      "Save All Slice",IDC_AU_CMD_SAVEALL,508,340,100,16
+    PUSHBUTTON      "Save Volume",IDC_AU_CMD_SAVEVOL,508,358,100,16
+    CONTROL         "",IDC_AU_SLD_SLICE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,9,252,588,18,WS_EX_STATICEDGE
+    CONTROL         "Enable Preprocessing",IDC_AU_CHK_PREPROC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,322,90,13
+    CONTROL         "Use default value",IDC_AU_CHK_DEF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,154,322,74,13
+    CONTROL         "",IDC_AU_ORGFRAME,"Static",SS_BLACKFRAME,9,1,291,247,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_AU_RESFRAME,"Static",SS_BLACKFRAME,306,1,291,247,WS_EX_CLIENTEDGE
+    LTEXT           "-1",IDC_BR_100,24,367,14,8
+    LTEXT           "-1",IDC_CS_100,24,404,14,11
+    LTEXT           "1",IDC_CS_M100,111,403,8,12
+    LTEXT           "1",IDC_BR_M100,112,367,12,12
+    LTEXT           "0",IDC_TH_MIN,155,369,8,8,0,WS_EX_RIGHT
+    LTEXT           "255",IDC_TH_MAX,229,369,12,8
+    LTEXT           "Static",IDC_TH_CUR,171,368,19,8
+    GROUPBOX        "Cutting settings",IDC_AU_OPPGRP,260,305,120,114
+    LTEXT           "Cutting methods",IDC_AU_LBL_CUTMED,270,354,54,8
+    PUSHBUTTON      "Close",IDCANCEL,510,396,100,16
+    CONTROL         "Segmentation mode",IDC_AU_RAD_SEG,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,270,320,79,10
+    CONTROL         "Cutting mode",IDC_AU_RAD_CUT,"Button",BS_AUTORADIOBUTTON,270,336,59,10
+    COMBOBOX        IDC_AU_CB_CMODE,270,372,96,36,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_3DRG DIALOGEX 0, 0, 603, 434
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "3D Region Growing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,492,410,100,14
+    CONTROL         "",IDC_3DRG_ORGFRAME,"Static",SS_BLACKFRAME,7,7,291,247,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_3DRG_RESFRAME,"Static",SS_BLACKFRAME,308,7,291,247,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_3DRG_SLD_SLICE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,258,592,18,WS_EX_STATICEDGE
+    GROUPBOX        "Gray Preprocessing",IDC_3DRG_GRAYGRP,7,293,124,133
+    CONTROL         "",IDC_3DRG_SLD_BRIGHT,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,17,340,102,15
+    CONTROL         "",IDC_3DRG_SLD_CONTRAST,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,17,378,102,15
+    LTEXT           "Brightness",IDC_LBL_BRIGHT,17,328,57,11
+    LTEXT           "Contrast",IDC_LBL_CONTRAST,17,367,52,11
+    CONTROL         "Enable Preprocessing",IDC_3DRG_CHK_PREPROC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,310,90,13
+    LTEXT           "-1",IDC_BR_100,21,355,14,8
+    LTEXT           "-1",IDC_CS_100,21,392,14,11
+    LTEXT           "1",IDC_CS_M100,109,391,8,12
+    LTEXT           "1",IDC_BR_M100,109,354,12,12
+    GROUPBOX        "Region Growing Settings",IDC_3DRG_SETTINGGRP,137,294,115,132
+    CONTROL         "",IDC_3DRG_SLD_THRES,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,147,340,90,15
+    LTEXT           "Region Threshold",IDC_LBL_THRES,147,327,72,11
+    CONTROL         "Use default value",IDC_3DRG_CHK_DEF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,308,74,13
+    LTEXT           "Static",IDC_TH_CUR,167,353,19,8
+    LTEXT           "0",IDC_TH_MIN,146,352,8,8,0,WS_EX_RIGHT
+    LTEXT           "255",IDC_TH_MAX,220,352,12,8
+    GROUPBOX        "Operation modes",IDC_3DRG_OPPGRP,261,294,120,132
+    LTEXT           "Cutting methods",IDC_3DRG_LBL_CUTMED,271,343,54,8
+    CONTROL         "Picking seed points",IDC_3DRG_RAD_SEG,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,271,309,76,10
+    CONTROL         "Cutting mode",IDC_3DRG_RAD_CUT,"Button",BS_AUTORADIOBUTTON,271,325,59,10
+    COMBOBOX        IDC_3DRG_CB_CUTMODE,271,356,96,36,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save Single Slice",IDC_3DRG_CMD_SAVESINGLE,492,342,100,16
+    PUSHBUTTON      "Save All Slice",IDC_3DRG_CMD_SAVEALL,492,360,100,16
+    PUSHBUTTON      "Save Volume",IDC_3DRG_CMD_SAVEVOL,492,378,100,16
+    PUSHBUTTON      "Start Segment",IDC_3DRG_START,271,389,96,16
+    EDITTEXT        IDC_3DRG_STARSLICE,168,366,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_3DRG_ENDSLICE,211,366,17,12,ES_AUTOHSCROLL
+    LTEXT           "Start",IDC_3DRG_LBLSTART,150,370,18,12
+    LTEXT           "End",IDC_3DRG_LBLEND,192,370,18,12
+    CONTROL         "Boundary detection",IDC_3DRG_CHK_BOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,271,374,79,10
+    LTEXT           "Boudary threshold",IDC_3DRG_BTHRES,150,390,60,8
+    CONTROL         "",IDC_3DRG_SLD_BTHRES,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,150,402,84,12
+    LTEXT           "0",IDC_TH_MINBTHRES,150,414,8,8,0,WS_EX_RIGHT
+    LTEXT           "255",IDC_TH_MAXBTHRES,222,414,12,8
+    LTEXT           "Static",IDC_LBL_CURBTHRE,168,414,19,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SliceView.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "SliceView.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOGBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 411
+    END
+
+    IDD_DLG_VOLSIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 63
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_DLG_BROWSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DLG_EXP_OPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_COLLABORATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 494
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+    END
+
+    IDD_SEG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 452
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_DLD_SEGEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DLG_REGIONGROW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 595
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 425
+    END
+
+    IDD_DLG_AUTOSEGMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 609
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 419
+    END
+
+    IDD_DLG_3DRG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 596
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 427
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOGBAR DLGINIT
+BEGIN
+    IDC_CMB_LAYOUT, 0x403, 9, 0
+0x6556, 0x7472, 0x6369, 0x6c61, "\000" 
+    IDC_CMB_LAYOUT, 0x403, 11, 0
+0x6f48, 0x6972, 0x6f7a, 0x746e, 0x6c61, "\000" 
+    IDC_CMB_LAYOUT, 0x403, 5, 0
+0x7543, 0x6562, "\000" 
+    0
+END
+
+IDD_DLD_SEGEX DLGINIT
+BEGIN
+    IDC_SEGEX_FILETYPE, 0x403, 19, 0
+0x704a, 0x6765, 0x6620, 0x6c69, 0x7365, 0x2820, 0x2e2a, 0x706a, 0x2967, 
+"\000" 
+    IDC_SEGEX_FILETYPE, 0x403, 21, 0
+0x6942, 0x6d74, 0x7061, 0x6620, 0x6c69, 0x7365, 0x2820, 0x2e2a, 0x6d62, 
+0x2970, "\000" 
+    IDC_SEGEX_FILETYPE, 0x403, 18, 0
+0x6152, 0x2077, 0x6966, 0x656c, 0x2073, 0x2a28, 0x722e, 0x7761, 0x0029, 
+
+    0
+END
+
+IDD_DLG_REGIONGROW DLGINIT
+BEGIN
+    IDC_RG_CB_CUTMODE, 0x403, 14, 0
+0x694c, 0x656e, 0x5320, 0x6765, 0x656d, 0x746e, 0x0073, 
+    IDC_RG_CB_CUTMODE, 0x403, 7, 0
+0x7053, 0x696c, 0x656e, "\000" 
+    IDC_RG_CB_CUTMODE, 0x403, 10, 0
+0x6552, 0x7463, 0x6e61, 0x6c67, 0x0065, 
+    0
+END
+
+IDD_DLG_AUTOSEGMENT DLGINIT
+BEGIN
+    IDC_AU_CB_CMODE, 0x403, 14, 0
+0x694c, 0x656e, 0x5320, 0x6765, 0x656d, 0x746e, 0x0073, 
+    IDC_AU_CB_CMODE, 0x403, 7, 0
+0x7053, 0x696c, 0x656e, "\000" 
+    IDC_AU_CB_CMODE, 0x403, 10, 0
+0x6552, 0x7463, 0x6e61, 0x6c67, 0x0065, 
+    0
+END
+
+IDD_DLG_3DRG DLGINIT
+BEGIN
+    IDC_3DRG_CB_CUTMODE, 0x403, 14, 0
+0x694c, 0x656e, 0x5320, 0x6765, 0x656d, 0x746e, 0x0073, 
+    IDC_3DRG_CB_CUTMODE, 0x403, 7, 0
+0x7053, 0x696c, 0x656e, "\000" 
+    IDC_3DRG_CB_CUTMODE, 0x403, 10, 0
+0x6552, 0x7463, 0x6e61, 0x6c67, 0x0065, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "SliceView"
+    IDR_SliceViewTYPE       "\nSliceView\nSliceView\n\n\nSliceView.Document\nSliceView.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SliceView"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SliceView.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

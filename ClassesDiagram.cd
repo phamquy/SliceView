@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="CMainFrame">
+    <Position X="0.5" Y="2.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAQAAAAAAACgBAiAAAgDAAAgAAEAAAAIAAABA=</HashCode>
+      <FileName>MainFrm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CLutProc" Collapsed="true">
+    <Position X="2.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAACAAAAAAAAA=</HashCode>
+      <FileName>LutProc.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSliceProc" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>SliceProc.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMDIFrameWnd" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKBARwWQQEYASoECgBEgEAQgNBAAgRAEwAIAAAAAkA=</HashCode>
+      <FileName>c:\program files\microsoft visual studio 9.0\vc\atlmfc\include\afxwin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
