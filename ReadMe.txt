@@ -1,4 +1,4 @@
-An Volume Slices view
+A Volume Slices view
 Features:
 - Orthogonal viewer 
 - Volume rendering and viewer
